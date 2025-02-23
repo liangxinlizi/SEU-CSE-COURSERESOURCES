@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Pro1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Pro3_2|Pro3_1:inst|lpm_mux1:inst5|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_5qc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Pro3_2|Pro3_1:inst|lpm_ram_dq0:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_frg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Pro3_2|Pro3_1:inst|lpm_rom1:inst2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_hha1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

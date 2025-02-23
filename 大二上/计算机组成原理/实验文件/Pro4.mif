@@ -1,0 +1,93 @@
+-- Copyright (C) 1991-2010 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=8;
+DEPTH=256;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=UNS;
+
+CONTENT BEGIN
+	0    :   191;
+	1    :   207;
+	2    :   46;
+	3    :   34;
+	4    :   67;
+	5    :   20;
+	6    :   67;
+	7    :   15;
+	8    :   254;
+	9    :   188;
+	10   :   26;
+	11   :   35;
+	12   :   121;
+	13   :   227;
+	14   :   251;
+	15   :   48;
+	16   :   97;
+	17   :   78;
+	18   :   19;
+	19   :   195;
+	20   :   123;
+	21   :   108;
+	22   :   200;
+	23   :   188;
+	24   :   186;
+	25   :   113;
+	26   :   151;
+	27   :   227;
+	28   :   40;
+	29   :   185;
+	30   :   92;
+	31   :   105;
+	32   :   153;
+	33   :   229;
+	34   :   18;
+	35   :   40;
+	36   :   68;
+	37   :   172;
+	38   :   247;
+	39   :   87;
+	40   :   253;
+	41   :   41;
+	42   :   63;
+	43   :   178;
+	44   :   101;
+	45   :   206;
+	46   :   238;
+	47   :   229;
+	48   :   46;
+	49   :   193;
+	50   :   170;
+	51   :   214;
+	52   :   128;
+	53   :   100;
+	54   :   175;
+	55   :   220;
+	56   :   55;
+	57   :   78;
+	58   :   22;
+	59   :   196;
+	60   :   32;
+	61   :   237;
+	62   :   145;
+	63   :   130;
+	[64..98]  :   0;
+	99   :   14;
+	[100..190]  :   0;
+	191  :   200;
+	[192..255]  :   0;
+END;
