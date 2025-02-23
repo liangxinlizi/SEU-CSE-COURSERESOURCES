@@ -1,0 +1,34 @@
+int waiting ;//等候理发的顾客数
+int CHAIRSr;//为顾客准备的椅子数
+semaphore  Customers,babers,mutex; 
+Customers=0; 
+barbers=0; 
+waiting=0; 
+mutex=1; 
+barber( )//理发师进程
+{ 
+	while(TRUE)  
+	{ 
+		wait(customers); //若无顾客，理发师睡眠
+		wait(mutex);//进程互斥
+		waiting=waiting-1;//等待顾客数少一
+		signal(barbers)；//理发师去为一个顾客服务
+		signal(mutex);//离开临界区
+		Cut_hair(); 
+	} 
+} 
+
+Customer（（int i））
+{  
+	wait(mutex);//进程互斥
+	if(waiting<CHAIRS)//看看有没有空椅子
+	{  
+		waiting=waiting+1;//等候顾客数加1 
+		signal(customers);//必要的话唤醒理发师 
+		signal(mutex);//开放临界区
+		wait(barbers);//无理发师，顾客等待
+		get_haircut();//一个顾客坐下等理发
+	} 
+	else     
+		signal(mutex);//人满了，走吧 
+} 
