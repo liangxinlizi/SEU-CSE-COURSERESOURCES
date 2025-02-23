@@ -1,0 +1,14 @@
+int num1 = 123;
+float num2 = 3.14;
+char str1 = "Hello, World!";
+if (num1 > 100) {
+    int num3 = 456;
+    return num3;
+} else {
+    continue;
+}
+&
+// This is a single-line comment
+/* This is a
+multi-line
+comment */

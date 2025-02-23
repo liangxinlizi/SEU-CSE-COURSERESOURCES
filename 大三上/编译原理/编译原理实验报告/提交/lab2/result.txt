@@ -1,0 +1,62 @@
+Case 1: i=i#
+      Step    State StackSymbol Stack Current SymbolRemaining String              Action
+         1              0         #              i           i=i#            Action[S0][i]=S5 (Shift)
+The input string 'i=i#' is invalid.
+
+Case 2: *i=i#
+      Step    State StackSymbol Stack Current SymbolRemaining String              Action
+         1              0         #              *          *i=i#            Action[S0][*]=S1 (Shift)
+         2            0_1        #*              i           i=i#            Action[S1][i]=S9 (Shift)
+         3          0_1_9       #*i              =            =i#                   R5: L->i (Reduce)
+         4            0_1        #*              L            =i#              Goto[S1][L]=7 (State Transition)
+         5          0_1_7       #*L              =            =i#                   R6: R->L (Reduce)
+         6            0_1        #*              R            =i#              Goto[S1][R]=8 (State Transition)
+         7          0_1_8       #*R              =            =i#                   R4: L->*R (Reduce)
+         8              0         #              L            =i#              Goto[S0][L]=2 (State Transition)
+         9            0_2        #L              =            =i#            Action[S2][=]=S11 (Shift)
+        10         0_2_11       #L=              i             i#            Action[S11][i]=S15 (Shift)
+        11      0_2_11_15      #L=i              #              #                   R7: R->i (Reduce)
+        12         0_2_11       #L=              R              #              Goto[S11][R]=14 (State Transition)
+        13      0_2_11_14      #L=R              #              #                   R2: S->L=R (Reduce)
+        14              0         #              S              #              Goto[S0][S]=4 (State Transition)
+        15            0_4        #S              #              #    Parsing complete
+The input string '*i=i#' is valid.
+
+Case 3: *i#
+      Step    State StackSymbol Stack Current SymbolRemaining String              Action
+         1              0         #              *            *i#            Action[S0][*]=S1 (Shift)
+         2            0_1        #*              i             i#            Action[S1][i]=S9 (Shift)
+         3          0_1_9       #*i              #              #                   R5: L->i (Reduce)
+         4            0_1        #*              L              #              Goto[S1][L]=7 (State Transition)
+         5          0_1_7       #*L              #              #                   R6: R->L (Reduce)
+         6            0_1        #*              R              #              Goto[S1][R]=8 (State Transition)
+         7          0_1_8       #*R              #              #                   R4: L->*R (Reduce)
+         8              0         #              L              #              Goto[S0][L]=2 (State Transition)
+         9            0_2        #L              #              #                   R6: R->L (Reduce)
+        10              0         #              R              #              Goto[S0][R]=3 (State Transition)
+        11            0_3        #R              #              #                   R3: S->R (Reduce)
+        12              0         #              S              #              Goto[S0][S]=4 (State Transition)
+        13            0_4        #S              #              #    Parsing complete
+The input string '*i#' is valid.
+
+Case 4: i#
+      Step    State StackSymbol Stack Current SymbolRemaining String              Action
+         1              0         #              i             i#            Action[S0][i]=S5 (Shift)
+         2            0_5        #i              #              #                   R5: L->i (Reduce)
+         3              0         #              L              #              Goto[S0][L]=2 (State Transition)
+         4            0_2        #L              #              #                   R6: R->L (Reduce)
+         5              0         #              R              #              Goto[S0][R]=3 (State Transition)
+         6            0_3        #R              #              #                   R3: S->R (Reduce)
+         7              0         #              S              #              Goto[S0][S]=4 (State Transition)
+         8            0_4        #S              #              #    Parsing complete
+The input string 'i#' is valid.
+
+Case 5: =i#
+      Step    State StackSymbol Stack Current SymbolRemaining String              Action
+The input string '=i#' is invalid.
+
+Case 6: ii#
+      Step    State StackSymbol Stack Current SymbolRemaining String              Action
+         1              0         #              i            ii#            Action[S0][i]=S5 (Shift)
+The input string 'ii#' is invalid.
+

@@ -1,0 +1,47 @@
+ch1-4
+ch2-49
+ch3-82
+ch4-136
+ch5-173
+ch6-199
+ch7-260
+ch8-269
+
+应用层 message 报文
+运输层 segment 报文段
+网络层 datagram 数据报
+链路层 frame 帧
+物理层 bit 比特
+
+选择1-20
+1.C
+2.D
+TCP/IP 4层
+因特网 5层
+OSI 7层
+3.A(网络层和传输层能实现端到端?)
+4.C
+5.D
+普通=SMTP+POP3
+web=SMTP+HTTP
+6.A(UDP选A，TCP选B)
+7.B
+8.B
+9.B
+10.B
+11.A
+12.D
+13.A
+14.C
+15.B(A后半句不对)
+16.A
+17.B
+18.C
+19.C
+20.D
+
+判断
+1.T
+4.F(乘2)
+9.T
+10.F
